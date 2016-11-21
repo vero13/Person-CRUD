@@ -1,0 +1,32 @@
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorator="layout">
+
+<div layout:fragment="content">
+
+    <div class="page-header">
+        <h3>Add new person</h3>
+    </div>
+
+    <form class="form-horizontal" method="post" name="person" id="person" action="/persons/create" role="form">
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="firstName">First Name:</label>
+            <input class="col-sm-10" id="firstName" name="firstName"/>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="lastName">Last Name:</label>
+            <input class="col-sm-10" id="lastName" name="lastName"/>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="birthDate">Birth date:</label>
+            <input type="date" id="birthDate" name="birthDate"/>
+        </div>
+
+        <div class="pull-right">
+            <button type="reset" class="btn btn-primary">Reset</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+</div>
+
+</html>
